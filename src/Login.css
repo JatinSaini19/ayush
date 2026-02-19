@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* 🌿 PAGE BACKGROUND */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #d4f5d0, #f0fff0);
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  background: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 18px 10px;
+  font-size: 26px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.portal-tag {
+  width: 100%;
+  text-align: center;
+  background: #43a047;
+  color: white;
+  padding: 6px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+
+/* MAIN AREA WITH NATURE BG */
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/nature.png") no-repeat center center/cover;
+  position: relative;
+}
+
+/* Dark overlay for readability */
+.main::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 50, 0, 0.35);
+  backdrop-filter: blur(2px);
+}
+
+/* GLASS LOGIN CARD */
+/* FULL BACKGROUND */
+.login-page {
+  height: 100vh;
+  width: 100%;
+  background: url("/nature.png") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* DARK GREEN OVERLAY */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 60, 0, 0.55);
+}
+
+/* GLASS CARD */
+.login-card {
+  position: relative;
+  width: 380px;
+  padding: 35px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 10px 35px rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  color: white;
+}
+
+/* TITLE */
+.login-card h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 13px;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+/* INPUTS */
+.login-card input,
+.login-card select {
+  padding: 11px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+/* BUTTON */
+.login-card button {
+  padding: 12px;
+  background: linear-gradient(90deg, #1b5e20, #66bb6a);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-card button:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 10px #66bb6a;
+}
+
+.footer-text {
+  font-size: 12px;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+
+
+.help {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #1b5e20;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: #e8f5e9;
+  font-size: 13px;
+}
