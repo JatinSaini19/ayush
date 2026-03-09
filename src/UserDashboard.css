@@ -1,9 +1,9 @@
 .dashboard {
   display: flex;
-  height: 100vh;   /* lock full height */
-  overflow: hidden; /* prevent whole page scroll */
+  height: 100vh;
   position: relative;
   font-family: "Segoe UI", sans-serif;
+  z-index: 0;
 }
 
 
@@ -74,11 +74,14 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-
 .content {
   flex: 1;
-  padding: 40px;
-  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  z-index: 2;
 }
 
 .hr-card {

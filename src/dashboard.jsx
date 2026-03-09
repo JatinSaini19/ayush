@@ -37,12 +37,12 @@ export default function UserDashboard() {
             👨‍⚕️ HR Module
           </li>
 
-          <li onClick={() => setActiveModule("IEC")}>
-            📢 IEC & Branding
-          </li>
+          <li onClick={() => window.open("/iec", "_blank")}>
+              📢 IEC & Branding
+              </li>
 
-          <li onClick={() => setActiveModule("Programme")}>
-            📋 Programme Activities
+          <li onClick={() => window.open("/programme-dashboard", "_blank")}>
+              📋 Programme Activities
           </li>
 
           <li onClick={() => setActiveModule("Yoga")}>

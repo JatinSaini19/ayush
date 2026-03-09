@@ -112,10 +112,16 @@
   border-radius: 6px;
   border: none;
   outline: none;
+  color: grey;
 }
+
+.login-card select option{
+  color: gray;
+} 
 
 /* BUTTON */
 .login-card button {
+  width: auto;
   padding: 12px;
   background: linear-gradient(90deg, #1b5e20, #66bb6a);
   color: white;

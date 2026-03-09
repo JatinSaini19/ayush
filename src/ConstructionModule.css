@@ -1,29 +1,98 @@
-.construction-layout {
-  display: flex;
-  width: 100%;
-  min-height: 100vh;
-  background: #f5f7f5;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.construction-sidebar {
+/* Layout */
+.module-container {
+  display: flex;
+  height: 100vh;
+  background: url("Holding.png.jpg") no-repeat center center/cover;
+}
+
+/* Sidebar */
+.module-sidebar {
   width: 260px;
-  background: #e8f5e9;
-  padding: 20px;
+  background: linear-gradient(to bottom, #1b4332, #081c15);
+  padding: 30px 20px;
+  color: white;
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
-.construction-sidebar button {
-  padding: 10px;
+.module-sidebar h2 {
+  margin-bottom: 30px;
+}
+
+.module-sidebar button {
+  background: rgba(255,255,255,0.1);
   border: none;
-  background: #2e7d32;
+  padding: 12px;
+  margin-bottom: 15px;
   color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.module-sidebar button:hover {
+  background: #2d6a4f;
+}
+
+/* Work Area */
+.module-workarea {
+  flex: 1;
+  padding: 50px;
+  backdrop-filter: blur(5px);
+  overflow-y: auto;
+}
+
+/* Glass Card */
+.glass-card {
+  background: rgba(255,255,255,0.85);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  margin-bottom: 40px;
+}
+
+.glass-card h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Inputs */
+.glass-card input,
+.glass-card select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Save Button */
+.save-btn {
+  width: 100%;
+  padding: 15px;
+  background: #2d6a4f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
   cursor: pointer;
 }
 
-.construction-content {
-  flex: 1;
-  padding: 40px;
-  background: white;
+.save-btn:hover {
+  background: #1b4332;
+}
+
+/* Table */
+.data-table {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background: rgba(255,255,255,0.9);
+  padding: 20px;
+  border-radius: 15px;
+  font-weight: bold;
 }
