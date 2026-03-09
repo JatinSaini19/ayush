@@ -1,4 +1,4 @@
-import "./moduletemplate.css";
+import "./ModuleTemplate.css";
 import React, { useState, useEffect } from "react";
 import Sidebar from "./components/ProgrammeSidebar";
 
